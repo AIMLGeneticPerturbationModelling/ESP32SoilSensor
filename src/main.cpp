@@ -39,7 +39,7 @@ void setup() {
   pinMode(SOIL_PIN, INPUT);
 
   ////// BLE INIT ////// 
-  BLEDevice::init("AllenAlienESP32");
+  BLEDevice::init("ESP32BluetoothName"); //Change this value to rename your ESP32 sensor
   BLEDevice::setMTU(247);
 
   bleServer = BLEDevice::createServer();
@@ -86,3 +86,4 @@ void loop() {
 
   delay(1500);
 }
+
